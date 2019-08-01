@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TABLE :"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginVertical="20dp"/>
+
+
+    <!-- Main linear layout of table-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- Left linear layout of table-->
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#373737">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#373737">
+                <TableRow>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="TIME"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="CURRENT"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="DAILY UNIT (kwh)"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="DAILY COST(IN ₹)"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="CUMULATIVE UNIT"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="CUMULATIVE COST"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+        <!-- Right linear layout of table-->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#f1f1f1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:id="@+id/TableLayoutTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#373737">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="2019-03-02 08:25:20"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="2019-03-02 08:25:20"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="2019-03-02 08:25:20"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="2019-03-02 08:25:20"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="2019-03-02 08:25:20"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:id="@+id/TableLayoutCurrent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#373737">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:id="@+id/tableLayoutDailyUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#373737">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:id="@+id/TableLayoutDailyCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#373737">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:id="@+id/tableLayoutCumulativeUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#373737">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:id="@+id/TableLayoutCumulativeCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#373737">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:layout_margin="1dp"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <!--End of Table-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scroll the right sode of table horizontally :)"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginVertical="20dp"/>
+
+
+</LinearLayout>
